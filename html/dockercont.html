@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link href="./docker.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="docker-board">
+    <span style="display: flex;">
+      <button class="search-button">
+        <a href="/docker.html">
+          <i class="material-icons">navigate_before</i>
+        </a>
+      </button>
+      <button class="search-button">
+        <a href="/index.html">
+          <i class="material-icons">home</i>
+        </a>
+      </button>
+    </span>
+    <form class="container"  action="/cgi-bin/container.py" target="_blank">
+      <h2 class="sub-title">Docker Container Creation</h2>
+      <div class="input-div">
+        <input type="text" class="docker-input" autocomplete="off" name="imgname" required placeholder="image name"/>
+        <input type="text" class="docker-input" autocomplete="off" name="imgv" placeholder="image version"/>
+        <input type="text" class="docker-input" autocomplete="off" name="contname" placeholder="container name"/>
+        <input type="text" class="docker-input" autocomplete="off" name="net" placeholder="network name"/>
+        <input type="text" class="docker-input" autocomplete="off" name="volname" placeholder="volume name"/>
+        <input type="text" class="docker-input" autocomplete="off" name="contmnt" placeholder="volume mount path"/>
+        <button class="click-btns" type="submit">create container</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

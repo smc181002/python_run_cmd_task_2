@@ -1,0 +1,67 @@
+*, input{
+  font-size: 18px;
+}
+
+.container{
+  height: calc(100vh - 60px);
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  height: max(10px, 80%);
+  justify-content: space-evenly;
+}
+
+.docker-input {
+  padding: 16px 32px;
+  border: 1px solid #00000011;
+  outline: none;
+  border-radius: 10px;
+  width: max(400px, 30vw);
+}
+
+.sub-title{
+  margin: 0;
+}
+
+.search-button {
+  margin: 10px 0 0 10px;
+}
+
+.search-button > a{
+  display: flex;
+  place-items: center;
+  text-decoration: none;
+}
+
+.docker-card{
+  text-decoration: none;
+  margin: 20px 0;
+  background: #f2f2f2;
+  padding: 30px 60px;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.docker-card:hover{
+  background: #e8e8e8;
+  transform: translateY(-4px);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 14px;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */  
+  font-size: 14px;
+  font-weight: 400;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 14px;
+  font-weight: 400;
+}

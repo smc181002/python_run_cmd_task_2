@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+          <h1 class="title">Run Cmd</h1>
+          <form class="input" action="/cgi-bin/cmd.py" target="_blank">
+            <span class="input-box" >
+              <input class="input-box" name=q autocomplete="off"/>
+            </span>
+            <button class="search-button" type="sumbit">
+              <i class="material-icons">search</i>
+            </button>
+          </form>
+          <div class="button-cont">
+            <button class="click-btns"><a href="/manpage.html">man pages</a></button>
+            <button class="click-btns"><a href="/docker.html">docker</a></button>
+          </div>
+        </div>
+</body>
+</html>

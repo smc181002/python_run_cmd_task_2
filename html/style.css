@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+}
+
+*{
+  font-family: 'Red Hat Display';
+}
+
+div, p, button, span, input {
+  font-weight: 500;
+  font-size: 25px;
+  color: #132041;
+}
+
+button.click-btns {
+  font-size: 16px;
+  padding: 16px 24px;
+  cursor: pointer;
+  background: #f2f2f2;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.click-btns > a{
+  color: #132041;
+  text-decoration: none;
+}
+
+button.click-btns:hover {
+  background: #5869E7;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.click-btns:hover > a {
+  color: white;
+}
+
+.button-cont {
+  display: flex;
+  margin: 30px auto;
+  width: min(70%, 400px);
+  justify-content: space-evenly;
+}
+
+.title{
+  font-size: 60px;
+}
+
+
+.sub-title{
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  widht: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  padding: 20px 25px;
+  width: 60%;
+  display: flex;
+  transition: 0.2s ease-in-out;
+}
+
+.input:hover, .input:focus-within{
+  border: 1px solid #dddddd00;
+  box-shadow: 0 1px 6px #20212447, 0 0 5px #00000009;
+}
+
+.input-box, .search-button{
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  place-items: center;
+}
+
+.input-box{
+  display: flex;
+  flex-grow: 1;
+  padding: 0 5px;
+}
+
+.search-button{
+  cursor: pointer;
+  border-radius: 400px;
+  padding: 10px;
+  transition: 0.2 ease-in-out;
+  color: #242424;
+}
+.search-button:hover{
+  background: #00000011;
+}
+
